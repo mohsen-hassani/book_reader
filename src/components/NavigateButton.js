@@ -9,7 +9,7 @@ class NavigateButton extends Component {
             <TouchableOpacity
              style={styles.Button}
              onPress={ () => 
-              this.props.nav.navigate(this.props.Link)
+              this.props.nav.navigate(this.props.Link, this.props.Params)
             }>
               <Text style={styles.Text}>
                 {this.props.Text}
