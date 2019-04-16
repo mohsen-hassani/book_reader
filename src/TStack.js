@@ -8,9 +8,10 @@ const AppNavigator = createStackNavigator({
     Comments,
 },
 {
-    initialRouteName: "Home"
+    initialRouteName: "Home",
+    headerMode: 'none'
 });
 
-const AppContainer = createAppContainer(AppNavigator);
+const TStack = createAppContainer(AppNavigator);
 
-export default AppContainer;
+export default TStack;

@@ -7,12 +7,12 @@
  */
 
 import React, {Component} from 'react';
-import AppContainer from './src/TStack';
+import TStack from './src/TStack';
 
 export default class App extends Component {
   render() {
     return (
-      <AppContainer />
+      <TStack />
     );
   }
 }

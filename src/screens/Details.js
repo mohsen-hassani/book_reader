@@ -3,6 +3,11 @@ import {Text, View} from 'react-native';
 import PushButton from '../components/PushButton';
 import BackButton from '../components/BackButton';
 class Details extends Component {
+
+  static navigationOptions = {
+    title: 'Details'
+  }
+
   render() {
     let id = this.props.navigation.getParam('id',0);
     let name = this.props.navigation.getParam('name','');

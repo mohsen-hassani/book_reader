@@ -4,6 +4,10 @@ import NavigateButton from '../components/NavigateButton'
 
 
 class Home extends Component {
+  static navigationOptions = {
+    title: 'Home',
+  }
+
   render() {
     return (
       <View style="flex:1">
