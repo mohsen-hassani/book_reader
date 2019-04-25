@@ -1,11 +1,11 @@
 import { createStackNavigator, createAppContainer } from "react-navigation";
-import {Home, Details, Comments} from './screens'
-
+// import HomeScreen from './screens/Converter.js';
+import {Home, Details, Comments} from './screens/index';
 
 const AppNavigator = createStackNavigator({
     Home,
     Details,
-    Comments,
+    Comments
 },
 {
     initialRouteName: "Home",
