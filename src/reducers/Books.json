@@ -1,38 +1,429 @@
 [
-    {"id": 0,
-    "title": "Webpack",
-    "description": "Webpack is a module bundler. It packs CommonJs/AMD modules i. e. for the browser. Allows to split your codebase into multiple bundles, which can be loaded on demand."
-    },
-    {"id": 1,
-    "title": "React",
-    "description": "React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes."
-    },
-    {"id": 2,
-    "title": "Redux",
-    "description": "Redux is a predictable state container for JavaScript apps. It helps you write applications that behave consistently, run in different environments (client, server, and native), and are easy to test."
-    },
-    {"id": 3,
-    "title": "React-Redux",
-    "description": "React-Redux is the official set of bindings between the React and Redux libraries. With this library you can keep your views and data in sync."
-    },
-    {"id": 4,
-    "title": "Lodash",
-    "description": "A modern JavaScript utility library delivering modularity, performance, & extras. Lodash is released under the MIT license & supports modern environments."
-    },
-    {"id": 5,
-    "title": "Redux-Thunk",
-    "description": "Redux Thunk middleware allows you to write action creators that return a function instead of an action. The thunk can be used to delay the dispatch of an action, or to dispatch only if a certain condition is met."
-    },
-    {"id": 6,
-    "title": "ESLint",
-    "description": "ESLint is an open source JavaScript linting utility originally created by Nicholas C. Zakas in June 2013. Code linting is a type of static analysis that is frequently used to find problematic patterns or code that doesn't adhere to certain style guidelines."
-    },
-    {"id": 7,
-    "title": "Babel",
-    "description": "Babel has support for the latest version of JavaScript through syntax transformers. These plugins allow you to use new syntax, right now without waiting for browser support."
-    },
-    {"id": 8,
-    "title": "Axios",
-    "description": "Promise based HTTP client for the browser and node.js. With Axios, you can make XMLHttpRequests from the browser or Node with the full Promise Api."
+    {
+        "book_details" : 
+        {
+            "id": 1,
+            "name" : "آموزش لاراول صفر تا صد",
+            "author" : "علی هنرمند",
+            "translator" : "بدون مترجم",
+            "score" : 0,
+            "description" : "کتاب فرهنگ شهر لوییز مامفورد یکی از کتاب های خوب برای بچه های شهرسازی هستش",
+            "pages" : 218,
+            "publisher" : "لارابوک",
+            "year" : 1395
+        },
+        "book_index":
+        [
+            {
+                "Chapter_id":1,
+                "Chapter_name" : "فصل اول: لاراول و MVC",
+                "chapter_desc" : "در این مجموعه پستها بخشهای مختلف یک پروژه لاراول را توضیح میدهیم. پروژه ای که در نظر گرفته ایم یک وبلاگ ساده است که در آن افراد میتوانند عضو وبلاگ شده، پست ایجاد کنند، بر روی پستها به عنوان میهمان یا عضو کامنت بگذارند، به پستها رای بدهند، آنها را در شبکه های اجتماعی به اشتراک بگذارند. همچنین مدیر وبلاگ هم میتواند پستها را مرور کرده و در حالتهای مختلفی، مانند در حال انتظار بررسی، منتشر شده، غیرقابل انتشار قرار دهد. مدیر بلاگ همچنین میتواند کاربران را فعال یا غیرفعال نماید",
+                "Chapter_content" : 
+                [
+                    {
+                        "id" : 1,
+                        "name" : "مقدمه",
+                        "page" : 1
+                    },
+                    {
+                        "id" : 2,
+                        "name" : "ایجاد پروژه لاراول",
+                        "page" : 2
+                    },
+                    {
+                        "id" : 3,
+                        "name" : "ایجاد جدول های پایگاه داده",
+                        "page" : 3
+                    },
+                    {
+                        "id" : 4,
+                        "name" : "ایجاد مدل",
+                        "page" : 5
+                    },
+                    {
+                        "id" : 5,
+                        "name" : "ارتباط بین مدل ها",
+                        "page" : 6
+                    }
+                ]
+            },
+            {
+                "Chapter_id":2,
+                "Chapter_name" : "فصل دوم: کنترلر ها",
+                "chapter_desc" : "در بخش قبل از آموزش لاراول، ایجاد پروژه وبلاگ لارابوک با نحوه استفاده از ابزارهای مختلف بای ایجاد مدلها و نحوه ایجاد مدلها توضیح دادیم. در این بخش میخواهیم نحوه استفاده از مدلهای ایجاد شده در بخش قبل و نمایش اطلاعات را آموزش دهیم",
+                "Chapter_content" : 
+                [
+                    {
+                        "id" : 1,
+                        "name" : "کنترلر",
+                        "page" : 7
+                    },
+                    {
+                        "id" : 2,
+                        "name" : "واکشی پستها",
+                        "page" : 8
+                    },
+                    {
+                        "id" : 3,
+                        "name" : "ایجاد view؛ ساختار blade",
+                        "page" : 9
+                    }
+                ]
+            },
+            {
+                "Chapter_id":3,
+                "Chapter_name" : "فصل سوم: ثبت پست",
+                "chapter_desc" : "دراین بخش نحوه ایجاد صفحه ای برای ثبت پست جدید را خواهیم دید",
+                "Chapter_content" : 
+                [
+                    {
+                        "id" : 1,
+                        "name" : "مقدمه",
+                        "page" : 28
+                    },
+                    {
+                        "id" : 2,
+                        "name" : "ایجاد صفحه ورود اطلاعات",
+                        "page" : 33
+                    },
+                    {
+                        "id" : 3,
+                        "name" : "ایجاد متد/اکشن نمایش صفحه ثبت پست بلاگ",
+                        "page" : 43
+                    },
+                    {
+                        "id" : 3,
+                        "name" : "ثبت اطلاعات",
+                        "page" : 43
+                    }
+                ]
+            },
+            {
+                "Chapter_id":4,
+                "Chapter_name" : "فصل چهارم: ویرایش اطلاعات",
+                "chapter_desc" : "",
+                "Chapter_content" : 
+                [
+                    {
+                        "id" : 1,
+                        "name" : "مقدمه",
+                        "page" : 28
+                    },
+                    {
+                        "id" : 2,
+                        "name" : "نمایش اطلاعات قابل ویرایش یک پست بلاگ",
+                        "page" : 33
+                    },
+                    {
+                        "id" : 3,
+                        "name" : "ثبت اطلاعات ویرایش شده توسط کاربر",
+                        "page" : 43
+                    },
+                    {
+                        "id" : 4,
+                        "name" : "ثبت اطلاعات ویرایش شده توسط کاربر",
+                        "page" : 43
+                    }
+                ]
+            }
+        ],
+        "book_content":
+        [
+            {
+                "page" : 1,
+                "contents" : 
+                [
+                    {
+                        "content_id" : 1,
+                        "content_type" : "par",
+                        "content" : "امروز اولین پست از مجموعه پستهای تولید یک پروژه با لااول را ارائه میدهیم."
+                    },
+                    {
+                        "content_id" : 2,
+                        "content_type" : "par",
+                        "content" : "در این مجموعه پستها بخشهای مختلف یک پروژه لاراول را توضیح میدهیم. پروژه ای که در نظر گرفته ایم یک وبلاگ ساده است که در آن افراد میتوانند عضو وبلاگ شده، پست ایجاد کنند، بر روی پستها به عنوان میهمان یا عضو کامنت بگذارند، به پستها رای بدهند، آنها را در شبکه های اجتماعی به اشتراک بگذارند. همچنین مدیر وبلاگ هم میتواند پستها را مرور کرده و در حالتهای مختلفی، مانند در حال انتظار بررسی، منتشر شده، غیرقابل انتشار قرار دهد. مدیر بلاگ همچنین میتواند کاربران را فعال یا غیرفعال نماید."
+                    }
+                ]
+            },
+            {
+                "page" : 2,
+                "contents" : 
+                [
+                    {
+                        "content_id" : 1,
+                        "content_type" : "par",
+                        "content" : "در قدم اول از ساخت پروژه شروع میکنیم. برای ساخت یک پروژه لاراول بهترین روش استفاده از ابزار کاربردی Composer است. در صورتی که هنوز composer را نصب نکرده اید میتوانید از سایت آن دانلود کنید و مراحل نصب را متناسب با سیستم مورد استفاده دنبال کنید. پس از نصب میتوانید با دستور زیر یک پروژه لاراول را ایجاد نمایید. (برای انجام تنظیمات میتوانید فیلم آموزشی حامد پاکدامن برای نصب لاراول را ببینید.)"
+                    },
+                    {
+                        "content_id" : 2,
+                        "content_type" : "code_php",
+                        "content" : "composer create-project laravel/laravel {directory} “~۵٫۲٫۰” --prefer-dist"
+                    },
+                    {
+                        "content_id" : 3,
+                        "content_type" : "par",
+                        "content" : "برای آشنایی با جزییات مربوط به نصب لاراول میتوانید به مستندات فارسی در لارابوک هم مراجعه کنید."
+                    },
+                    {
+                        "content_id" : 4,
+                        "content_type" : "par",
+                        "content" : "با ساختن پروژه لاراول شما امکاناتی را در اختیار دارید. مانند احراز هویت کاربران و کافی است از آن استفاده کنید"
+                    }
+                ]
+            },
+            {
+                "page" : 3,
+                "contents" : 
+                [
+                    {
+                        "content_id" : 1,
+                        "content_type" : "par",
+                        "content" :"برای شروع از پایگاه داده و جدولها شروع میکنیم. نحوه انجام تنظیمات پایگاه داده پروژه، ساخت جدولها با استفاده از مایگریشنها، و ایجاد مدلها در لاراول با استفاده از آرتیزان را بررسی میکنیم."
+                    },
+                    {
+                        "content_id" : 2,
+                        "content_type" : "h4",
+                        "content" :"استفاده از مایگریشنها"
+                    },
+                    {
+                        "content_id" : 3,
+                        "content_type" : "par",
+                        "content" :"مایگریشنها ابزار بسیار مفیدی برای امکان ایجاد نسخه بر روی پایگاه داده هستند. در محیطهای تیمی و همچنین محیطهایی که تغییرات پایگاه داده زیاد است میتواند کاربرد زیادی داشته باشد."
+                    },
+                    {
+                        "content_id" : 4,
+                        "content_type" : "h4",
+                        "content" :"طراحی پایگاه داده"
+                    },
+                    {
+                        "content_id" : 5,
+                        "content_type" : "par",
+                        "content" :"پیش از استفاده از ابزار باید ساختار پایگاه داده را طراحی کنیم. برای وبلاگ ساختار زیر را در نظر گرفته ایم."
+                    },
+                    {
+                        "content_id" : 6,
+                        "content_type" : "par",
+                        "content" :"حال که ساختار پایگاه داده را میشناسیم میتوانیم با استفاده از مایگریشنها در لاراول آن را پیاده سازی کنیم."
+                    },
+                    {
+                        "content_id" : 7,
+                        "content_type" : "par",
+                        "content" :"برای ایجاد مایگریشن از دستور زیر استفاده میکنیم."
+                    },
+                    {
+                        "content_id" : 8,
+                        "content_type" : "code_php",
+                        "content" :"php artisan make:migration create_blog_post_table --create=blog_post"
+                    }
+                ]
+            },
+            {
+                "page" : 4,
+                "contents" : 
+                [
+                    {
+                        "content_id" : 1,
+                        "content_type" : "par",
+                        "content" :"اجرای این دستور فایلی در دایرکتوری database/migrations با نام مشخص شده ایجاد میکند. تصویر این فایل و محتوای آن را در ادامه میبینید. برای مطالعه بیشتر مایگریشن ها میتوانید از مستندات فارسی لاراول در لارابوک استفاده کنید."
+                    },
+                    {
+                        "content_id" : 2,
+                        "content_type" : "par",
+                        "content" :"برای تعریف ساختار پایگاه داده در مایگریشنها از Schema Builder استفاده میکنیم. به عنوان مثال برای ساختن ساختار جدول blog_post از ساختار دستور زیر استفاده میکنیم."
+                    },
+                    {
+                        "content_id" : 3,
+                        "content_type" : "par",
+                        "content" :"حال با استفاده از دستور زیر میتوانید مایگریشن ایجاد شده را اجرا کنید."
+                    },
+                    {
+                        "content_id" : 4,
+                        "content_type" : "code_laravel",
+                        "content" :"php artisan migrate"
+                    },
+                    {
+                        "content_id" : 5,
+                        "content_type" : "par",
+                        "content" :"نکته: پیش از اجرای دستور نیاز به انجام تنظیمات ارتباط با پایگاه داده دارید."
+                    },
+                    {
+                        "content_id" : 6,
+                        "content_type" : "par",
+                        "content" :"پس از اجرای مایگریشنها ساختار تعریف شده در پایگاه داده ایجاد می شود"
+                    }
+                ]
+            },
+            {
+                "page" : 5,
+                "contents" : 
+                [
+                    {
+                        "content_id" : 1,
+                        "content_type" : "par",
+                        "content" : "از آنجا که در لاراول پروژه ها بر پایه MVC پیاده سازی میشوند برای استفاده از جدولهای پایگاه داده باید از نگاشت آنها در برنامه استفاده کرد. به این منظور در پروژه لاراول باید مدلهای متناظر با جدولهای پایگاه داده را ایجاد نمود. برای ایجاد مدلهای پایگاه داده میتوانید از فرمان آرتیزان زیر استفاده کنید."
+                    },
+                    {
+                        "content_id" : 2,
+                        "content_type" : "code_php",
+                        "content" : "php artisan make:model BlogPost"
+                    },
+                    {
+                        "content_id" : 3,
+                        "content_type" : "par",
+                        "content" : "این فرمان یک کلاس مدل با نام BlogPost در دایرکتوری app ایجاد میکند."
+                    },
+                    {
+                        "content_id" : 4,
+                        "content_type" : "par",
+                        "content" : "پیشنهاد: اگر میخواهید با افزوده شدن تعداد مدلهای پروژه پوشه app شلوغ نشود یک دایرکتوری Models یا Entities یا با هر نام دیگری بسازید و مدلهای نرم افزار را درآن قرار دهید. حال دستور را با قالب زیر اجرا کنید."
+                    },
+                    {
+                        "content_id" : 5,
+                        "content_type" : "code_php",
+                        "content" : "php artisan make:model Entities/BlogPost"
+                    },
+                    {
+                        "content_id" : 6,
+                        "content_type" : "par",
+                        "content" : "با این روش مدل BlogPost در دایرکتوری Entities ایجاد میشود."
+                    }
+                    
+                ]
+            },
+            {
+                "page" : 6,
+                "contents" : 
+                [
+                    {
+                        "content_id" : 1,
+                        "content_type" : "par",
+                        "content" : "از آنجاکه در پایگاه داده ارتباطهایی بین جدولها وجود دارد، باید امکان ایجاد این ارتباط در مدلها هم وجود داشته باشد. برای مثال بین جدول کاربران و جدول پستهای وبلاگ یک ارتباط یک به چند وجود دارد. بدین معنی که هر کاربر میتواند چندین پست ایجاد نماید."
+                    },
+                    {
+                        "content_id" : 2,
+                        "content_type" : "h4",
+                        "content" : "پستهای یک کاربر"
+                    },
+                    {
+                        "content_id" : 3,
+                        "content_type" : "par",
+                        "content" : "برای پیاده سازی آن در مدلهای لاراول کلاس مدل User فانکشن زیر را می افزاییم."
+                    },
+                    {
+                        "content_id" : 4,
+                        "content_type" : "par",
+                        "content" : "نکته: لاراول به صورت پیش فرض مایگریشن و مدل User را ایجاد میکند."
+                    },
+                    {
+                        "content_id" : 5,
+                        "content_type" : "h4",
+                        "content" : "کاربر ایجاد کننده پست"
+                    },
+                    {
+                        "content_id" : 6,
+                        "content_type" : "par",
+                        "content" : "اما این ارتباط یک ارتباط دوسویه است. به این معنی که گاهی نیاز است بدانیم هر پست وبلاگ متعلق به کدام کاربر است – به عبارت دیگر کاربر ایجاد کننده پست وبلاگ را واکشی کنیم. بنابراین باید رابطه را از سمت پست وبلاگ هم ایجاد کنیم. برای این کار، همانطور که احتمالا حدس زده اید، باید در کلاس مدل BlogPost فانکشن زیر را تعریف کنیم:"
+                    },
+                    {
+                        "content_id" : 7,
+                        "content_type" : "par",
+                        "content" : "رابطه های ایجاد شده در نوشتن پرس و جوها، هنگام استفاده از Query Builder کمک زیادی به ساده سازی پرس و جوها میکنند."
+                    },
+                    {
+                        "content_id" : 8,
+                        "content_type" : "par",
+                        "content" : " تا اینجا نحوه انجام تنظیمات پایگاه داده، ایجاد مایگریشنها، ایجاد مدلها را آموختیم. مسلما در این پست به تمامی جنبه ها و جزییات مربوط به آماده سازی زیرساخت داده ای در لاراول نپرداخته ایم، اما چهارچوب و روال این کار بررسی شده است. در پست بعدی نحوه ایجاد کنترلرها و نحوه استفاده از مدلها و Query Builder برای ایجاد پرس و جوها را توضیح خواهیم داد. میتوانید به عنوان تمرین مایگریشن و مدل مربوط به موجودیت comment را ایجاد نمایید."
+                    },
+                    {
+                        "content_id" : 9,
+                        "content_type" : "par",
+                        "content" : "امیدواریم با مساله های زیادی در مسیر ایجاد مایگریشن و مدل comment روبرو شوید و آنها را در کامنتها با ما و بقیه دوستانی که در این پستها ما را همراهی میکنند در میان بگذارید. سعی میکنیم در سریعترین زمان ممکن با هم مسائل را بررسی کنیم."
+                    }
+                ]
+            },
+            {
+                "page" : 7,
+                "contents" : 
+                [
+                    {
+                        "content_id" : 1,
+                        "content_type" : "par",
+                        "content" : "ما تا اینجا ساختار پایگاه داده رو داریم. طبق مدل MVC باید اطلاعات سیستم از طریق کنترلهایی که توی سیستم تعریف میکنیم به سمت لایه نمایش هدایت بشن. کنترلر در واقع یه کلاسه که عموتا وظیفه هدایت جریان برنامه رو به عهده داره و گاهی وظیفه انجام برخی عملیات منطقی رو هم به عهده این کلاس میذاریم. برای ایجاد کنترلر هم یه دستور آرتیزان داریم"
+                    },
+                    {
+                        "content_id" : 2,
+                        "content_type" : "h4",
+                        "content" : "دستور آرتیزان ایجاد کنترلر"
+                    },
+                    {
+                        "content_id" : 3,
+                        "content_type" : "code_php",
+                        "content" : "php artisan make:controller BlogPostController"
+                    },
+                    {
+                        "content_id" : 4,
+                        "content_type" : "par",
+                        "content" : "این دستور یه فایل با اسم BlogPostController که یه کلاس باز با همین اسم داره و کلاس کنترلر لاراول رو توسعه میده میسازه. این فایل رو میتونید توی مسیر"
+                    },
+                    {
+                        "content_id" : 5,
+                        "content_type" : "code_php",
+                        "content" : "app/http/controller"
+                    },
+                    {
+                        "content_id" : 6,
+                        "content_type" : "h4",
+                        "content" : "افزودن فانکشنهای کنترلر"
+                    },
+                    {
+                        "content_id" : 7,
+                        "content_type" : "h4",
+                        "content" : "توی این کنترلر باید تمام فانکشنهای یا به زبان لاراول اکشنهایی که رفتارهای مختلف مربوط به پستهای وبلاگ رو توصیف میکنه ایجاد کنید. برای مثال اگه میخواید تمامی پستهای وبلاگ رو ببینید باید یه فانکشن که این کار رو انجام میده ایجاد کنید اسمش میتونه هر چیز مرتبطی باشه. برای مثال all، allPosts یا اسمهای مشابه. کنترلر بلاگ پست رو میتونید توی تصویر زیر ببینید:"
+                    }
+                ]
+            },
+            {
+                "page" : 8,
+                "contents" : 
+                [
+                    {
+                        "content_id" : 1,
+                        "content_type" : "par",
+                        "content" : "خوب الان ما یه کنترلر داریم که یه فانکشن داره برای واکشی کل پستهای موجود توی جدولی که برای پستها در نظر گرفتیم و احتمالا نمایش اونها تو قدم بعد. برای دسترسی به پستهایی که توی دیتابیس ذخیره شدن باید نمونه ای از مدل دیتابیس بسازیم و با استفاده از Query Builder پرس و جویی که میخوایم رو پیاده سازی کنیم. برای واکشی تمام پستهایی که توی جدول blog_post ذخیره شده به روش زیر عمل میکنیم:"
+                    },
+                    {
+                        "content_id" : 2,
+                        "content_type" : "code_php",
+                        "content" : "$blogPosts = BlogPost::all();"
+                    },
+                    {
+                        "content_id" : 3,
+                        "content_type" : "par",
+                        "content" : "کتابخانه ساخت پرس و جوی eloquent امکانات زیادی داره که امیدواریم بتونیم تو پستهای اختصاصی اونارو معرفی کنیم و توی پروژه ها ازشون استفاده کنیم. البته میتونید از مستندات فارسی لارابوک هم استفاده کنید."
+                    },
+                    {
+                        "content_id" : 4,
+                        "content_type" : "par",
+                        "content" : "به همین راحتی حالا شما تمام پستهایی که توی جدول ذخیره کردید رو میتونید داشته باشید. قدم بعدی میتونه فرستادن این اطلاعات برای لایه نمایش باشه یا فرستادن اون به عنوان خروجی تابع برای استفاده توی API. این بستگی به نیاز پروژه داره. توی این پروژه ما اطلاعات واکشی شده رو فقط نمایش میدیم."
+                    },
+                    {
+                        "content_id" : 5,
+                        "content_type" : "par",
+                        "content" : "خوب الان ما یه کنترلر داریم که یه فانکشن داره برای واکشی کل پستهای موجود توی جدولی که برای پستها در نظر گرفتیم و احتمالا نمایش اونها تو قدم بعد. برای دسترسی به پستهایی که توی دیتابیس ذخیره شدن باید نمونه ای از مدل دیتابیس بسازیم و با استفاده از Query Builder پرس و جویی که میخوایم رو پیاده سازی کنیم. برای واکشی تمام پستهایی که توی جدول blog_post ذخیره شده به روش زیر عمل میکنیم:"
+                    },
+                    {
+                        "content_id" : 6,
+                        "content_type" : "h4",
+                        "content" : "فرستادن اطلاعات برای نمایش"
+                    },
+                    {
+                        "content_id" : 7,
+                        "content_type" : "par",
+                        "content" : "برای فرستادن اطلاعات سمت لایه نمایش در لاراول از تابع کمکی view استفاده میکنیم. این تابع اسم صفحه ای که باید نمایش داده بشه رو میگیره و صفحه رو برای نمایش آماده میکنه و سمت مرورگر کاربر میفرسته. بعلاوه اطلاعاتی که باید براش فرستاده بشه رو هم میتونید با تعریف نام متغیر به لایه نمایش بفرستیم. روش استفاده از این دستور رو در ادامه میبینید:"
+                    }
+                ]
+            }
+        ]
+        
     }
-    ]
+]
