@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Text, View, TouchableOpacity} from 'react-native';
+import styles from './Styles';
 
 class NavigateButton extends Component {
   render() {
@@ -22,15 +23,3 @@ class NavigateButton extends Component {
 }
 
 export default NavigateButton ;
-
-const styles = {
-  Button: {
-     backgroundColor: '#007aff',
-     alignItems: 'center',
-     padding:10,
-     margin:20
-    },
-    Text:{
-        color:'#fff'
-    }
-}
