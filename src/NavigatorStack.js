@@ -1,11 +1,12 @@
 import { createStackNavigator,createMaterialTopTabNavigator, createAppContainer } from "react-navigation";
-import {BookIndex, Read, SendComment, Details, Comments} from './screens/index';
+import {Comments} from './screens/Comments';
+import {Details} from './screens/Details';
 
 
 
 const TabNavigator = createMaterialTopTabNavigator({
+    Comments: Comments,
     Detail: Details,
-    Comments: Comments
 },
 {
     initialRouteName: "Detail",

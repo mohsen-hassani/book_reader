@@ -1,30 +1,8 @@
 import { createStackNavigator,createMaterialTopTabNavigator, createAppContainer } from "react-navigation";
-import {BookIndex, Read, SendComment, Details, Comments} from './screens/index';
-import NavigatorStack from './NavigatorStack';
-import {Text, View, ScrollView} from 'react-native';
-import NavigateButton from './components/NavigateButton';
-import React, {Component} from 'react';
-
-
-class txts extends Component {
-    render() {
-      return (
-          <View style={{ flex:1 }}>
-              <Text>
-                  Hi
-              </Text>
-              <NavigateButton
-                Text={'Read'} 
-                Link={'BookIndex'} 
-                nav={this.props.navigation} />
-              <NavigatorStack />
-          </View>
-      );
-    }
-  }
+import {BookIndex, Read,Home} from './screens/index';
   
 const StackNav = createStackNavigator({
-    Home: txts,
+    Home: Home,
     BookIndex: BookIndex,
     Read: Read
 },
