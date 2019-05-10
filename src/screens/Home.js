@@ -41,7 +41,7 @@ class HomeComp extends Component {
               <NavigateButton Link={'BookIndex'} Text={'شروع'} nav={this.props.navigation}/>
           </View>
           <View style={styles.BookImageView}>
-            <Image source={require('../images/book.jpg')} style={styles.BookImage} />
+            <Image source={require('../images/book.png')} style={styles.BookImage} />
           </View>
         </View>
 
