@@ -26,6 +26,7 @@ class ReadComp extends Component {
 
   render() {
     let page = this.props.navigation.getParam('page',0);
+    let count = this.props.navigation.getParam('count',1);
     return (
       <View style={{flex:1}}>
         <Header headerText={'فصل'} navigation={this.props.navigation} />

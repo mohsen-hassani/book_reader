@@ -1,8 +1,28 @@
 import React, {Component} from 'react';
-import {Text, View, TouchableOpacity} from 'react-native';
+import {Text, View, TouchableOpacity, FlatList} from 'react-native';
+// import SubIndexItem from '../components/SubIndexItem';
 import styles from './Styles';
 
 class HeadIndexItem extends Component {
+
+
+  // renderSubChapterIndexItems = (subChapter) => {
+  //   return <SubIndexItem
+  //     nav={this.props.nav}
+  //     Link={'Read'}
+  //     Count={subChapter.item.pages}
+  //     Page={subChapter.item.start}
+  //     Text={subChapter.item.name} />
+  // }
+
+  // renderSubChapterIndex = () => {
+  //   return (
+  //     <FlatList
+  //       data={this.props.ChapterContent}
+  //       renderItem={this.renderSubChapterIndexItems}
+  //       keyExtractor={i => i.id} />
+  //   )}
+
   render() {
     return (
       <View style="flex:1">
@@ -22,6 +42,7 @@ class HeadIndexItem extends Component {
                 </View>
             </TouchableOpacity>
         </View>
+        {/* {this.renderSubChapterIndex()} */}
       </View>
     );
   }
