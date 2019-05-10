@@ -25,6 +25,11 @@ const styles = {
        paddingBottom:10,
        borderRadius: 5,
       },
+      Card:{
+        elevation:5, 
+        marginBottom:15, 
+        backgroundColor: '#fff'
+      },
       HeadIndexButton: {
         backgroundColor: '#eee',
         alignItems: 'flex-end',
@@ -75,7 +80,7 @@ const styles = {
         marginTop:5
       },
       Title:{
-        fontSize:25,
+        fontSize:20,
         fontWeight: '600',
         color: '#000'
       },

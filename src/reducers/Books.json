@@ -5,11 +5,12 @@
             "id": 1,
             "name" : "آموزش لاراول صفر تا صد",
             "author" : "علی هنرمند",
-            "translator" : "بدون مترجم",
-            "score" : 0,
+            "translator" : "",
+            "score" : 3.2,
             "description" : "کتاب فرهنگ شهر لوییز مامفورد یکی از کتاب های خوب برای بچه های شهرسازی هستش",
             "pages" : 218,
             "publisher" : "لارابوک",
+            "publisher_website" : "http://www.larabook.ir",
             "year" : 1395
         },
         "book_index":

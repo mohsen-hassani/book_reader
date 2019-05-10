@@ -1,8 +1,5 @@
 import React, {Component} from 'react';
 import {Text, View, ScrollView} from 'react-native';
-import PushButton from '../components/PushButton';
-import NavigateButton from '../components/NavigateButton';
-import BackButton from '../components/BackButton';
 import {connect} from 'react-redux';
 import styles from '../components/Styles';
 
@@ -11,19 +8,21 @@ class DetailsScreen extends Component {
   static navigationOptions = {
     title: 'جزيیات'
   }
-
   render() {
-    // let name = this.props.navigation.getParam('name','');
-    let book_name = 'sdf';
-    let author = '';
-    let translator = '';
-    let pages = '';
-    let desc = 'سکیبت سیکنبت ینلت  فهس هت لتقکلث تحختسحهت لهتب نپبرنپ یندقل طیحقت طکنزب پقن لپقسنفت سنیکتلب سکظقثفت سحخق ربی پذطدذسگنت یگقت';
-    desc += 'سکیبت سیکنبت ینلت  فهس هت لتقکلث تحختسحهت لهتب نپبرنپ یندقل طیحقت طکنزب پقن لپقسنفت سنیکتلب سکظقثفت سحخق ربی پذطدذسگنت یگقت';
+
+    let book = this.props.book;
+
+    let book_name = book.name;
+    let author = book.author;
+    let translator = book.translator;
+    let pages = book.pages;
+    let desc = book.description;
+    let publisher = book.publisher;
+    let year = book.year;
+    let website = book.publisher_website;
+
     return (
       <ScrollView style="flex:1">
-        {/* <Text>{this.props.book.description}</Text> */}
-
         <View style={[styles.Row, styles.Padd10]}>
           <Text>{book_name}</Text>
           <Text>نام اثر: </Text>
@@ -45,6 +44,21 @@ class DetailsScreen extends Component {
         </View>
 
         <View style={[styles.Row, styles.Padd10]}>
+          <Text>{publisher}</Text>
+          <Text>ناشر: </Text>
+        </View>
+
+        <View style={[styles.Row, styles.Padd10]}>
+          <Text>{website}</Text>
+          <Text>وب سایت ناشر: </Text>
+        </View>
+
+        <View style={[styles.Row, styles.Padd10]}>
+          <Text>{year}</Text>
+          <Text>سال انتشار: </Text>
+        </View>
+
+        <View style={[styles.Row, styles.Padd10]}>
           <Text>{desc}</Text>
           <Text>خلاصه کتاب: </Text>
         </View>
@@ -54,7 +68,8 @@ class DetailsScreen extends Component {
 }
 
 let mapStateToProps = (state, ownProps) => ({
-  book : state.books[ownProps.navigation.getParam('id',0)]
+  // book : state.books[ownProps.navigation.getParam('id',0)]
+  book : state.books[0].book_details
 })
 
 let Details = connect(mapStateToProps)(DetailsScreen);
