@@ -7,7 +7,7 @@ class H4 extends Component {
     render(){
         return(
             <View style={{flex: 1}}>
-                <Text>
+                <Text style={Styles.H4}>
                     {this.content}
                 </Text>
             </View>

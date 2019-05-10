@@ -3,11 +3,11 @@ import {View, Text} from 'react-native';
 import Styles from './Styles';
 
 class Par extends Component {
-    content = this.props.c;
+    content = this.props.content;
     render(){
         return(
             <View style={{flex: 1}}>
-                <Text>
+                <Text style={Styles.Par}>
                     {this.content}
                 </Text>
             </View>

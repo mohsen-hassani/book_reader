@@ -7,7 +7,7 @@ class CodePHP extends Component {
     render(){
         return(
             <View style={{flex: 1}}>
-                <Text>
+                <Text style={Styles.CodePHP}>
                     {this.content}
                 </Text>
             </View>

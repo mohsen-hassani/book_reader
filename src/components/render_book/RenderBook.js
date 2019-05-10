@@ -6,7 +6,7 @@ export default class RenderBook extends Component {
     renderContent = (content) => {
         switch (content.content_type) {
           case 'par':
-            return(<Par c={content.content} />);
+            return(<Par content={content.content} />);
           case 'h3':
             return(<H3 content={content.content} />);
           case 'h4':
@@ -22,6 +22,7 @@ export default class RenderBook extends Component {
     
     
     render(){
-        return this.renderContent(this.props.Content);
+        console.log(this.props.Content.item);
+        return this.renderContent(this.props.Content.item);
     }
 }
