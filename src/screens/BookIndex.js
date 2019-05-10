@@ -4,6 +4,7 @@ import HeadIndexItem from '../components/HeadIndexItem';
 import SubIndexItem from '../components/SubIndexItem';
 import {connect} from 'react-redux';
 import styles from '../components/Styles';
+import Header from '../components/Header';
 
 class BookIndexComp extends Component {
   static navigationOptions = {
@@ -12,6 +13,7 @@ class BookIndexComp extends Component {
   render() {
     return (
       <View style={{flex:1}}>
+        <Header headerText={'فهرست کتاب'} navigation={this.props.navigation} />
         <ScrollView style={{flex: 1, marginBottom:20}}>
               <HeadIndexItem
                 nav={this.props.navigation}

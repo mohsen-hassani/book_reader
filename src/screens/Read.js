@@ -3,6 +3,7 @@ import {Text, View, ScrollView, FlatList} from 'react-native';
 import NavigateButton from '../components/NavigateButton';
 import RenderBook from '../components/render_book/RenderBook';
 import {connect} from 'react-redux';
+import Header from '../components/Header';
 
 class ReadComp extends Component {
   static navigationOptions = {
@@ -27,6 +28,7 @@ class ReadComp extends Component {
     let page = this.props.navigation.getParam('page',0);
     return (
       <View style={{flex:1}}>
+        <Header headerText={'فصل'} navigation={this.props.navigation} />
         <ScrollView style={{flex: 1, marginBottom:20}}>
           {this.renderBook(page)}
         </ScrollView>   

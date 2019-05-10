@@ -1,4 +1,21 @@
 const styles = {
+    HeaderContainer:{
+      backgroundColor: '#00A87D',
+      flexDirection: 'row',
+      justifyContent: 'flex-end',
+      alignItems: 'center',
+      height: 55,
+      elevation: 5
+    },
+    HeaderText:{
+      color: '#FFF',
+      fontSize: 20,
+      marginRight: 20
+
+    },
+    HeaderBackIcon:{
+      marginRight: 20
+    },
     Button: {
        backgroundColor: '#00A87D',
        alignItems: 'center',
