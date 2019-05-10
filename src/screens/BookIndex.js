@@ -21,22 +21,22 @@ class BookIndexComp extends Component {
               <SubIndexItem
                 nav={this.props.navigation}
                 Link={'Read'}
-                Page={3}
+                Page={1}
                 Text={'قسمت اول'} />
               <SubIndexItem
                 nav={this.props.navigation}
                 Link={'Read'}
-                Page={7}
+                Page={2}
                 Text={'قسمت دوم'} />
               <SubIndexItem
                 nav={this.props.navigation}
                 Link={'Read'}
-                Page={12}
+                Page={3}
                 Text={'قسمت سوم'} />
               <SubIndexItem
                 nav={this.props.navigation}
                 Link={'Read'}
-                Page={18}
+                Page={4}
                 Text={'قسمت چهارم'} />
 
               <HeadIndexItem

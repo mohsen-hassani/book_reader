@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Text, View, ScrollView} from 'react-native';
-import NavigateButton from '../components/NavigateButton'
+import NavigateButton from '../components/NavigateButton';
+import RenderBook from '../components/render_book/RenderBook';
 import {connect} from 'react-redux';
 
 
@@ -9,30 +10,19 @@ class ReadComp extends Component {
     title: 'Home',
   }
 
-  // getAllLibraries = () => {
-  //   return this.props.bl.map(
-  //     book => <NavigateButton
-  //               key={book.id}
-  //               Text={book.title} 
-  //               Link={'Details'} 
-  //               nav={this.props.navigation} 
-  //               Params={{
-  //                 id: book.id,
-  //                 name: book.title
-  //               }}/>
-  //     );
-  // }
+  renderBook = (page) => {
+      return this.props.bl[0].book_content[page].contents.map(
+        i => <RenderBook Content={i} />
+      )
+  }
+
   render() {
-    let page = this.props.navigation.getParam('page',0)
+    let page = this.props.navigation.getParam('page',0);
     return (
       <View style={{flex:1}}>
         <Text>Home screen {page} </Text>
         <ScrollView style={{flex: 1, marginBottom:20}}>
-            {/* {this.getAllLibraries()} */}
-            <NavigateButton
-                Text={'Read'} 
-                Link={'Read'} 
-                nav={this.props.navigation} />
+          {this.renderBook(page)}
         </ScrollView>   
       </View>
     );
