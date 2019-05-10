@@ -8,8 +8,54 @@ const styles = {
        paddingBottom:10,
        borderRadius: 5,
       },
+      HeadIndexButton: {
+        backgroundColor: '#eee',
+        alignItems: 'flex-end',
+        padding:10,
+       },
+       HeadIndexNumber: {
+        backgroundColor: '#00A87D',
+        alignItems: 'center',
+        width:35,
+        height:35,
+        borderRadius: 40,
+        color:'#fff',
+        textAlign:'center',
+        textAlignVertical:'center',    
+        fontSize:18,
+        fontWeight:'600',    
+       },
+       SubIndexButton: {
+        backgroundColor: '#eee',
+        alignItems: 'flex-end',
+        padding:10,
+        paddingRight:30,
+       },
+       SubIndexNumber: {
+        backgroundColor: '#aaa',
+        alignItems: 'center',
+        width:30,
+        height:30,
+        borderRadius: 40,
+        color:'#fff',
+        textAlign:'center',
+        textAlignVertical:'center',   
+        fontSize:12
+
+       },
       Text:{
           color:'#fff'
+      },
+      HeadIndexText:{
+        fontSize:18,
+        fontWeight:'600',
+        marginRight:10,
+        marginTop:5
+      },
+      SubIndexText:{
+        fontSize:14,
+        marginRight:10,
+        marginTop:5
       },
       Title:{
         fontSize:25,

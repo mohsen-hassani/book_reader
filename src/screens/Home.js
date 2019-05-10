@@ -25,7 +25,7 @@ class Home extends Component {
                 </View>
                 <Text style={{marginTop:12}} >امتیاز:</Text>
               </View>
-              <NavigateButton Link={'Read'} Text={'شروع'} nav={this.props.navigation}/>
+              <NavigateButton Link={'BookIndex'} Text={'شروع'} nav={this.props.navigation}/>
           </View>
           <View style={styles.BookImageView}>
             <Image source={img} style={styles.BookImage} />

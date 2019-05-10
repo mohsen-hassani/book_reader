@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Text, View, ScrollView, TouchableOpacity} from 'react-native';
-import NavigateButton from '../components/NavigateButton'
+import HeadIndexItem from '../components/HeadIndexItem';
+import SubIndexItem from '../components/SubIndexItem';
 import {connect} from 'react-redux';
 import styles from '../components/Styles';
 
@@ -11,17 +12,89 @@ class BookIndexComp extends Component {
   render() {
     return (
       <View style={{flex:1}}>
-        <Text>Home screen {this.props.pid} </Text>
         <ScrollView style={{flex: 1, marginBottom:20}}>
-            <TouchableOpacity
-              style={styles.Button}
-              onPress={ () => 
-                this.props.navigation.navigate('Read')
-              }>
-                <Text style={styles.Text}>
-                  Read in the tab navigator
-                </Text>
-            </TouchableOpacity>
+              <HeadIndexItem
+                nav={this.props.navigation}
+                Link={'Read'}
+                Page={1}
+                Text={'فصل اول'} />
+              <SubIndexItem
+                nav={this.props.navigation}
+                Link={'Read'}
+                Page={3}
+                Text={'قسمت اول'} />
+              <SubIndexItem
+                nav={this.props.navigation}
+                Link={'Read'}
+                Page={7}
+                Text={'قسمت دوم'} />
+              <SubIndexItem
+                nav={this.props.navigation}
+                Link={'Read'}
+                Page={12}
+                Text={'قسمت سوم'} />
+              <SubIndexItem
+                nav={this.props.navigation}
+                Link={'Read'}
+                Page={18}
+                Text={'قسمت چهارم'} />
+
+              <HeadIndexItem
+                nav={this.props.navigation}
+                Link={'Read'}
+                Page={2}
+                Text={'فصل دوم'} />
+              <SubIndexItem
+                nav={this.props.navigation}
+                Link={'Read'}
+                Page={27}
+                Text={'قسمت اول'} />
+              <SubIndexItem
+                nav={this.props.navigation}
+                Link={'Read'}
+                Page={29}
+                Text={'قسمت دوم'} />
+              <SubIndexItem
+                nav={this.props.navigation}
+                Link={'Read'}
+                Page={36}
+                Text={'قسمت سوم'} />
+              <SubIndexItem
+                nav={this.props.navigation}
+                Link={'Read'}
+                Page={44}
+                Text={'قسمت چهارم'} />
+
+              <HeadIndexItem
+                nav={this.props.navigation}
+                Link={'Read'}
+                Page={3}
+                Text={'فصل سوم'} />
+              <SubIndexItem
+                nav={this.props.navigation}
+                Link={'Read'}
+                Page={51}
+                Text={'قسمت اول'} />
+              <SubIndexItem
+                nav={this.props.navigation}
+                Link={'Read'}
+                Page={74}
+                Text={'قسمت دوم'} />
+              <SubIndexItem
+                nav={this.props.navigation}
+                Link={'Read'}
+                Page={89}
+                Text={'قسمت سوم'} />
+              <SubIndexItem
+                nav={this.props.navigation}
+                Link={'Read'}
+                Page={103}
+                Text={'قسمت چهارم'} />
+              <SubIndexItem
+                nav={this.props.navigation}
+                Link={'Read'}
+                Page={117}
+                Text={'قسمت پنجم'} />
         </ScrollView>   
       </View>
     );

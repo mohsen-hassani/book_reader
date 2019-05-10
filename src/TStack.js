@@ -7,7 +7,7 @@ const StackNav = createStackNavigator({
     Read: Read
 },
 {
-    initialRouteName: "Home",
+    initialRouteName: "BookIndex",
     headerMode: 'none'
 });
 

@@ -8,6 +8,7 @@ class ReadComp extends Component {
   static navigationOptions = {
     title: 'Home',
   }
+
   // getAllLibraries = () => {
   //   return this.props.bl.map(
   //     book => <NavigateButton
@@ -22,9 +23,10 @@ class ReadComp extends Component {
   //     );
   // }
   render() {
+    let page = this.props.navigation.getParam('page',0)
     return (
       <View style={{flex:1}}>
-        <Text>Home screen {this.props.pid} </Text>
+        <Text>Home screen {page} </Text>
         <ScrollView style={{flex: 1, marginBottom:20}}>
             {/* {this.getAllLibraries()} */}
             <NavigateButton
