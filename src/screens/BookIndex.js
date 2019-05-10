@@ -31,7 +31,6 @@ class BookIndexComp extends Component {
     )}
 
   renderIndexItem = (indexItem) => {
-    console.log(indexItem);
     return (
       <View>
         <HeadIndexItem

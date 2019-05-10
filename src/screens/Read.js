@@ -12,26 +12,38 @@ class ReadComp extends Component {
 
 
   renderItem = (item) => {
-    return <RenderBook Content={item} />
+    return <RenderBook Content={item}  key={item.item.content_id.toString()}/>
   }
 
 
-  renderBook = (page) => {
-      return <FlatList 
-        data={this.props.bl[0].book_content[page].contents}
-        renderItem={this.renderItem}
-        keyExtractor={item => item.content_id.toString()}
-        />
+  renderBook = (page, count) => {
+    let components = [];
+    for (let i = page; i < page + count; i++) {
+          components.push(this.renderPage(i));
+      }
+      return components;
   }
+
+  renderPage = (page) => {
+    this.props.bl[0].book_content[page].contents.map(
+      i => console.log(i.content_id)
+    )
+    return <FlatList 
+      data={this.props.bl[0].book_content[page].contents}
+      renderItem={this.renderItem}
+      keyExtractor={item => item.content_id.toString()}
+      />
+}
 
   render() {
     let page = this.props.navigation.getParam('page',0);
     let count = this.props.navigation.getParam('count',1);
+    let title = this.props.navigation.getParam('text','بدون نام');
     return (
       <View style={{flex:1}}>
-        <Header headerText={'فصل'} navigation={this.props.navigation} />
+        <Header headerText={title} navigation={this.props.navigation} />
         <ScrollView style={{flex: 1, marginBottom:20}}>
-          {this.renderBook(page)}
+          {this.renderBook(page, count)}
         </ScrollView>   
       </View>
     );

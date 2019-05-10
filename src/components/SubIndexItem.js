@@ -11,7 +11,9 @@ class SubIndexItem extends Component {
              style={styles.SubIndexButton}
              onPress={ () => 
               this.props.nav.navigate(this.props.Link, {
-                  'page': this.props.Page
+                  'page': this.props.Page - 1,
+                  'count' : this.props.Count,
+                  'text': this.props.Text
               })
             }>
                 <View style={styles.Row}>

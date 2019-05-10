@@ -22,7 +22,6 @@ export default class RenderBook extends Component {
     
     
     render(){
-        console.log(this.props.Content.item);
         return this.renderContent(this.props.Content.item);
     }
 }
