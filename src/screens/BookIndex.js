@@ -14,7 +14,7 @@ class BookIndexComp extends Component {
     return (
       <View style={{flex:1}}>
         <Header headerText={'فهرست کتاب'} navigation={this.props.navigation} />
-        <ScrollView style={{flex: 1, marginBottom:20}}>
+        <ScrollView style={{flex: 1}}>
               <HeadIndexItem
                 nav={this.props.navigation}
                 Link={'Read'}
