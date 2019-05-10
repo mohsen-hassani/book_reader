@@ -19,7 +19,13 @@ class ReadComp extends Component {
   renderBook = (page, count) => {
     let components = [];
     for (let i = page; i < page + count; i++) {
-          components.push(this.renderPage(i));
+          components.push(
+            <View key={i}>
+              {
+                this.renderPage(i)
+              }
+            </View>
+            );
       }
       return components;
   }
