@@ -25,42 +25,42 @@ class DetailsScreen extends Component {
       <ScrollView style="flex:1">
         <View style={[styles.Row, styles.Padd10]}>
           <Text>{book_name}</Text>
-          <Text>نام اثر: </Text>
+          <Text style={styles.BoldText}>نام اثر: </Text>
         </View>
 
         <View style={[styles.Row, styles.Padd10]}>
           <Text>{author}</Text>
-          <Text>نویسنده: </Text>
+          <Text style={styles.BoldText}>نویسنده: </Text>
         </View>
         
         <View style={[styles.Row, styles.Padd10]}>
           <Text>{translator}</Text>
-          <Text>مترجم: </Text>
+          <Text style={styles.BoldText}>مترجم: </Text>
         </View>
 
         <View style={[styles.Row, styles.Padd10]}>
           <Text>{pages}</Text>
-          <Text>تعداد صفحات: </Text>
+          <Text style={styles.BoldText}>تعداد صفحات: </Text>
         </View>
 
         <View style={[styles.Row, styles.Padd10]}>
           <Text>{publisher}</Text>
-          <Text>ناشر: </Text>
+          <Text style={styles.BoldText}>ناشر: </Text>
         </View>
 
         <View style={[styles.Row, styles.Padd10]}>
           <Text>{website}</Text>
-          <Text>وب سایت ناشر: </Text>
+          <Text style={styles.BoldText}>وب سایت ناشر: </Text>
         </View>
 
         <View style={[styles.Row, styles.Padd10]}>
           <Text>{year}</Text>
-          <Text>سال انتشار: </Text>
+          <Text style={styles.BoldText}>سال انتشار: </Text>
         </View>
 
         <View style={[styles.Row, styles.Padd10]}>
-          <Text>{desc}</Text>
-          <Text>خلاصه کتاب: </Text>
+          <Text style={{marginLeft: 70}}>{desc}</Text>
+          <Text style={styles.BoldText}>خلاصه کتاب: </Text>
         </View>
       </ScrollView>
     );

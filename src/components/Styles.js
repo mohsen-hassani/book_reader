@@ -68,6 +68,9 @@ const styles = {
       Text:{
           color:'#fff'
       },
+      BoldText:{
+        fontWeight: 'bold'
+      },
       HeadIndexText:{
         fontSize:18,
         fontWeight:'600',

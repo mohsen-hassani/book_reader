@@ -3,7 +3,6 @@ import {Text, View, ScrollView, Image} from 'react-native';
 import NavigateButton from '../components/NavigateButton';
 import {Details} from './Details';
 import styles from '../components/Styles';
-import img from '../images/book.jpg';
 import YStar from '../images/Yellow_Star.png';
 import GStar from '../images/Gray_Star.png';
 import { connect } from 'react-redux';
@@ -42,7 +41,7 @@ class HomeComp extends Component {
               <NavigateButton Link={'BookIndex'} Text={'شروع'} nav={this.props.navigation}/>
           </View>
           <View style={styles.BookImageView}>
-            <Image source={img} style={styles.BookImage} />
+            <Image source={require('../images/book.jpg')} style={styles.BookImage} />
           </View>
         </View>
 
